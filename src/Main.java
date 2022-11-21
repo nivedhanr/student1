@@ -26,6 +26,17 @@ public class Main {
                         college[a] = sc.next();
                     }
                     break;
+                case 2:
+                    System.out.println("Student Details");
+                    for(int a=0;a<2;a++) {
+                        System.out.println("Student name"+name[a]);
+                        System.out.println("Roll number"+roll_no[a]);
+                        System.out.println("Admission number"+ad_num[a]);
+                        System.out.println("College"+college[a]);
+                        System.out.println("");
+                    }
+                    break;
+
                 default:
                     System.out.println("Invalid entry");
             }
