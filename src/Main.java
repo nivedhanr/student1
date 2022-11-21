@@ -36,6 +36,29 @@ public class Main {
                         System.out.println("");
                     }
                     break;
+                case 3:
+                    System.out.println("Enter the employee code:");
+                    int s=sc.nextInt();
+                    boolean f=false;
+                    for(int a=0;a<2;a++){
+                        if(ad_num[a]==s){
+                            f=true;
+                        }
+                    }
+                    if(f==true){
+                        for(int a=0;a<2;a++){
+                            System.out.println("Student admission no"+ad_num[a]);
+                            System.out.println("Student name"+name[a]);
+                            System.out.println("Student roll number"+roll_no[a]);
+                            System.out.println("College"+college[a]);
+                            System.out.println("");
+
+                        }
+                    }
+                    else{
+                        System.out.println("Data is not found");
+                    }
+                    break;
 
                 default:
                     System.out.println("Invalid entry");
